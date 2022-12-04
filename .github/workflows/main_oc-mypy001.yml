@@ -33,7 +33,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pwd
+          echo $(pwd)
           pip install -r requirements.txt
         
       # Optional: Add step to run tests here
