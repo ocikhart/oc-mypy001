@@ -31,6 +31,9 @@ jobs:
           python -m venv venv
           source venv/bin/activate
 
+      - name: Dump context
+        run: echo "$AZURE_FUNCTIONAPP_PACKAGE_PATH"
+        
       - name: Install dependencies
         run: pip install -r requirements.txt
         
